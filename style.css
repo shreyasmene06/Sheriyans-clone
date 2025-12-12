@@ -10,6 +10,10 @@
     font-family: hell;
     src: url(HelveticaNowDisplay-Regular_5Mzhp8KlA8_CAVTbnsPOM.woff2);
 }
+@font-face {
+    font-family: hell-bold;
+    src: url(Helvetica\ Bold.ttf);
+}
 @font-face{
     font-family: neu;
     src: url(NeueMachina-Regular.otf);
@@ -44,6 +48,9 @@ nav{
     font-family: neu;
     position: fixed;
     width: 100%;
+    background: none;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 
 }
 .nav1 h6{
@@ -219,6 +226,12 @@ main{
     font-weight: 50px;
     gap : 10px;
     margin-bottom: 10px;
+    border-radius: 5px;
+}
+.batch{
+    margin-top: 15px;
+    font-family: neu;
+    font-weight: 100;
 }
 @media(max-width:1400px){
     .section1 .left h1{
@@ -250,9 +263,73 @@ main{
     height: 50vw;
     object-fit: cover;
     }
+    .section1 .right .right-in .image-bottom{
+    padding: 10px;
+    padding-top: 20px;
+    gap: 8px;
+    
+    }
+.right-in .image-bottom h4{
+    background-color: #141416;
+    padding: 6px 12px;
+    border-radius: 5px;
+    width: 45%;
+    font-size: 3vw;
+    }
 }    
 @media(max-width:600px){
     .section1 .left h1{
         font-size: 5vw;
+    }
+    .section1 .left{
+        align-items: center;
+        justify-content: center;
+    }
+    .section1 .left .tags h4{
+        font-size: 13px;
+    }
+    .section1 .left .cta button{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    
+}
+
+.section2{
+    padding: 100px 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.section2 h1{
+    font-family: hell-bold;
+    font-size: 150px;
+    background-image: url(https://ik.imagekit.io/sheryians/Aptitude%20&%20Reasoning/bloomMask%20Large_lvwFbM14_l.png);
+    background-clip: text;
+    background-size: cover;
+    color: transparent;
+    position: relative;
+}
+.section2 h1.bloom{
+    position: absolute;
+    filter: blur(45px);
+}
+.section2 h3{
+    font-size: 45px;
+    text-transform: capitalize;
+    font-family: hell;
+    letter-spacing: -1px;
+
+}
+@media(max-width:900px){
+    .section2 h1{
+        font-size: 15vw;
+        white-space: nowrap;
+    }
+    .section2 h3{
+        text-align: center;
+        font-size: 4vw;
     }
 }
